@@ -7,8 +7,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
-
-
+import communication.messages.*;
 
 
 public class Server {
@@ -72,6 +71,8 @@ public class Server {
 			
 		    new Thread(new ServerTask(clientSocket.getRemoteSocketAddress().toString(),in)).start();
 	    }
+		
+		
 	}
 	   
     
