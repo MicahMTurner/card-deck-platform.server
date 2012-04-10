@@ -1,4 +1,7 @@
-import communication.server.Server;
+import war.War;
+import logic.client.Game;
+import logic.host.Host;
+//import communication.server.Server;
 public class ServerStarter {
 
 	/**
@@ -6,9 +9,10 @@ public class ServerStarter {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Server s = new Server();
+		Game game = new War();
+		Host host = new Host(game);
 		try{
-			s.start();
+			host.run();
 		}
 		catch(Exception e){
 			
