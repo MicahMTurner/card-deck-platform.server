@@ -13,6 +13,7 @@ public class ServerStarter {
 		Host host = new Host(game);
 		try{
 			host.run();
+			System.out.println("test");
 		}
 		catch(Exception e){
 			
